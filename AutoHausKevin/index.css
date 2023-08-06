@@ -1,0 +1,440 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(#a1a0a0d8 0%, #063e7e69);
+    display: flex;
+    flex-wrap: wrap;;
+}
+
+header {
+    height: 100px;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+header a {
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-radius: 7px;
+    margin: 4px;
+}
+
+header h2 {
+    position: fixed;
+    transform: translateX(-53rem);
+}
+
+.center {
+    transform: translateX(-90px);
+}
+
+.container {
+    background: #fff;
+    height: 30px;
+    border-radius: 30px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 rgba(0,0,0,0.4);
+    transform: translateX(-90px);
+    z-index: 99;
+}
+
+.container input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 70px;
+    font-weight: 500;
+    font-size: 16px;
+    z-index: 100;
+}
+
+.login_pos {
+    position: fixed;
+    transform: translateX(50px);
+}
+
+.login {
+    transform: translateX(750px);
+    background-color: transparent;
+    border-color: lightgray;
+    width: 130px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1.1em;
+    color: lightgray;
+    box-shadow: none;
+}
+
+.login:hover {
+    background-color: #b3b3b3;
+}
+
+.login_field {
+    opacity: 0;
+    position: absolute;
+    bottom: 350px;
+    left: 800px;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    border: solid lightgray;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    z-index: 99;
+}
+
+.login_field h1 {
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+.close_login {
+    pointer-events: none;
+    opacity: 0;
+    outline: none;
+    position: fixed;
+    bottom: 793px;
+    left: 1143px;
+    padding: 7px;   
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-size: 2em;
+    background-color: #162938;
+    color: white;
+    border: none;
+    border-radius: 0px 18px 0px 50px;
+    z-index: 100;
+}
+
+.input_pw {
+    border: none;
+    outline: none;
+    position: absolute;
+    background: transparent;
+    border-bottom: solid black;
+    width: 250px;
+    height: 50px;  
+    font-size: large;
+    bottom: 250;
+    left: 50px;
+    transition: 0.8s;
+    z-index: 100;
+}
+
+.input_un {
+    border: none;
+    outline: none;
+    position: absolute;
+    background: transparent;
+    border-bottom: solid black;
+    width: 250px;
+    height: 50px;
+    font-size: large;
+    bottom: 330px;
+    left: 50px;
+    transition: 0.8s;
+    z-index: 100;
+}
+
+.input_un:focus {
+    transition: 0.8s;
+    border-bottom: solid rgb(168, 168, 168);
+}
+
+.input_pw:focus {
+    transition: 0.8s;
+    border-bottom: solid rgb(168, 168, 168);
+}
+
+.un_error {
+    opacity: 0;
+    color: red;
+    position: fixed;
+    bottom: 380px;
+    left: 50px;
+}
+
+.pw_error {
+    opacity: 0;
+    color: red;
+    position: fixed;
+    bottom: 300px;
+    left: 50px;
+}
+
+.un {
+    position: absolute;
+    bottom: 335px;
+    left: 310px;
+    font-size:40px;
+}
+
+.pw {
+    position: absolute;
+    bottom: 260;
+    left: 310px;
+    font-size: 40px;
+}
+
+.pw_forgot {
+    outline: none;
+    border:none;
+    background-color: transparent;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 220;
+    left: 150;
+    font-size: 18px;
+    z-index: 100;
+}
+
+.submit-button {
+    font-size: 20px;
+    background-color: #13456b00;
+    color: black;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 160px;
+    left: 210px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.submit-button:hover {
+    background-color: rgb(226, 225, 225);
+}
+
+.create_account {
+    opacity: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 190;
+    left: 110;
+    font-size: 18px;
+    z-index: 100;
+}
+
+.create_account_field {
+    opacity: 0;
+    position: absolute;
+    bottom: 350px;
+    left: 800px;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    border: solid lightgray;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.create_account_field h1 {
+    margin-top: 30px;
+    margin-left: 90px;
+}
+
+.close_create {
+    pointer-events: none;
+    opacity: 0;
+    outline: none;
+    position: fixed;
+    bottom: 793px;
+    left: 1143px;
+    padding: 7px;   
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-size: 2em;
+    background-color: #162938;
+    color: white;
+    border: none;
+    border-radius: 0px 18px 0px 50px;
+    z-index: 100;
+}
+
+.switch_login {
+    opacity: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 573;
+    left: 890;
+    font-size: 18px;
+    z-index: 100;
+}
+
+.mercedes {
+    background-color: white;
+    width: 300px;
+    height: 306px;
+    position: absolute;
+    bottom: 450px;
+    left: 450px;
+    border-radius: 7px;
+    transition: 0.8s;
+}
+
+.mercedes img {
+    width: 250px;
+    margin-left: 25px;
+    margin-top: 20px;
+    transition: 0.8s;
+}
+
+.mercedes_btn {
+    text-decoration: none;
+    color: black;
+}
+
+.mercedes p {
+    color: black;
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 2px;
+    margin-left: 115px;
+    margin-top: 5px;
+    position: relative;
+    bottom: -6px;
+    transition: 0.8s;
+}
+
+.mercedes:hover {
+    width: 350px;
+    height: 356px;
+    transition: 0.8s;
+}
+
+.mercedes:hover img {
+    margin-left: 50px;
+    margin-top: 50px;
+    transition: 0.8s;
+}
+
+.mercedes:hover p {
+    margin-left: 140px;
+    transition: 0.8s;
+}
+
+.audi {
+    background-color: white;
+    width: 300px;
+    height: 306px;
+    position: absolute;
+    bottom: 450px;
+    left: 850px;
+    border-radius: 7px;
+    transition: 0.8s;
+}
+
+.audi img {
+    width: 250px;
+    margin-left: 25px;
+    margin-top: 50px;
+    transition: 0.8s;
+}
+
+.audi_btn {
+    text-decoration: none;
+    color: black;
+}
+
+.audi p {
+    color: black;
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 2px;
+    margin-left: 135px;
+    margin-top: 40px;
+    position: relative;
+    bottom: -6px;
+    transition: 0.8s;
+}
+
+.audi:hover {
+    width: 350px;
+    height: 356px;
+    transition: 0.8s;
+}
+
+.audi:hover img {
+    margin-left: 50px;
+    margin-top: 50px;
+    transition: 0.8s;
+}
+
+.audi:hover p {
+    margin-top: 70px;
+    margin-left: 160px;
+    transition: 0.8s;
+}
+
+.bmw {
+    background-color: white;
+    width: 300px;
+    height: 306px;
+    position: absolute;
+    bottom: 450px;
+    left: 1250px;
+    border-radius: 7px;
+    transition: 0.8s;
+}
+
+.bmw img {
+    width: 240px;
+    margin-left: 30px;
+    margin-top: 20px;
+    transition: 0.8s;
+}
+
+.bmw_btn {
+    text-decoration: none;
+    color: black;
+}
+
+.bmw p {
+    color: black;
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 2px;
+    margin-left: 130px;
+    margin-top: 20px;
+    position: relative;
+    bottom: -6px;
+    transition: 0.8s;
+}
+
+.bmw:hover {
+    width: 350px;
+    height: 356px;
+    transition: 0.8s;
+}
+
+.bmw:hover img {
+    margin-left: 50px;
+    margin-top: 50px;
+    transition: 0.8s;
+}
+
+.bmw:hover p {
+    margin-left: 150px;
+    transition: 0.8s;
+}

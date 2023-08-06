@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Chat</title>
+        <link rel="stylesheet" href="index.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <div id="chat_area">
+            <div id="background">
+                <h2>ChatGPT</h2>
+                <div id="examples">
+                    <ion-icon name="sunny-outline" id="examples_i"></ion-icon>
+                    <p id="title_examples">Examples</p>
+                    <button id="ask_1">"Explain quantum computing in simple terms"→</button>
+                    <button id="ask_2">"Got any creative ideas for a 10 year old's birthday?"→</button>
+                    <button id="ask_3">"How do I make an HTTP request in Javascript?"→</button>
+                </div>
+                <div id="capabilities">
+                    <ion-icon name="flash-outline" id="cap_i"></ion-icon>
+                    <p id="title_capabilities">Capabilities</p>
+                    <p id="cap_1">Remembers what user said earliert in the conversation</p>
+                    <p id="cap_2">Allows user to provide follow-up corrections</p>
+                    <p id="cap_3">Trained to decline inappropriate request</p>
+                </div>
+                <div id="limitations">
+                    <ion-icon name="warning-outline" id="limitations_i"></ion-icon>
+                    <p id="title_limitations">Limitations</p>
+                    <p id="lim_1">May occasionally generate incorrect information</p>
+                    <p id="lim_2">May occasionally produce harmful instructions or biased content</p>
+                    <p id="lim_3">Limited knowledge of world and events after 2021</p>
+                </div>
+            </div>
+            <div id="bottom">
+                <input type="text" placeholder="Send a message..." id="text_field">
+                <ion-icon name="send-outline" id="submit"></ion-icon>
+                <p id="version">ChatGPT Mar 23 Version.</p>
+                <p id="info">Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts</p>
+            </div>
+        </div>
+        <div id="side_bar">
+            <div id="new_chat_div">
+            <button id="new_chat"> 
+                New chat
+            </button>
+            <ion-icon name="add-outline" id="new_chat_i"></ion-icon>   </div>
+            <div id="chat_history">
+                <a id="chat_1">
+                    Test Chat
+                </a>
+                <ion-icon name="chatbox-outline" id="chat_icon"></ion-icon>
+            </div>
+            <div id="options">
+                <a href="" id="clear_chats">
+                    Clear conversations
+                </a>
+                <ion-icon name="trash-outline" id="clear_chats_i"></ion-icon>
+                <a href="" id="upgrade">
+                    Upgrade to Plus
+                </a>
+                <ion-icon name="person-outline" id="upgrade_i"></ion-icon>
+                <a href="" id="dark_mode">
+                    Dark mode
+                </a>
+                <ion-icon name="moon-outline" id="dark_mode_i"></ion-icon>
+                <a href="" id="faq">
+                    Updates & FAQ
+                </a>
+                <ion-icon name="open-outline" id="faq_i"></ion-icon>
+                <a href="" id="log_out">
+                    Log out
+                </a>
+                <ion-icon name="log-out-outline" id="log_out_i"></ion-icon>
+            </div>
+        </div>
+    </body>
+</html>
